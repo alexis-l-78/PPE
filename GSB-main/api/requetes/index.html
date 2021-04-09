@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GSB-API</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link type="text/css" href="style/bootstrap.css" rel="stylesheet">
+</head>
+<body style="background-color: white">
+<div class="" style="text-align: center">
+    <h1 style="color: blue">Bienvenue sur l'API GSB</h1>
+</div>
+<div class="row">
+    <div class="col-md-5 col-lg-5 col-sm-5"></div>
+    <img class="col-lg-2 col-sm-2 col-md-2" src="image/logo.jpg">
+    <div class="col-md-5 col-lg-5 col-sm-5"></div>
+</div>
+<div class="row">
+    <div class="col-md-4 col-lg-4 col-sm-4"></div>
+    <div class="col-md-4 col-lg-4 col-sm-4" style="margin-bottom: 5%;margin-top: 5%;background-color: #c2c3c0; border: solid black 1px; border-radius: 20px; display: block">
+        <ul>
+            <li><h3>Recuperer les infos d'un visiteur en fonction de son nom.</h3></li>
+            <p>Sans parametre :<a href="Connexion.php"> connexion.php</a></p>
+            <p>Avec parametre :<a href="Connexion.php?name=Villechalane"> connexion.php?name=Villechalane</a></p>
+            <li><h3>Recuperer la liste des departements avec au moins un medecin</h3></li>
+            <p>Sans parametre :<a href="DepartementbyCP.php"> DepartementbyCP.php</a></p>
+            <p>Avec parametre :<a href="DepartementbyCP.php?cp=75000"> DepartementbyCP.php?cp=75000</a></p>
+            <li><h3>Recuperer les visiteurs en fonction d'un departement</h3></li>
+            <p>Sans parametre :<a href="DepartementbyVIS.php"> DepartementbyVIS.php</a></p>
+            <p>Avec parametre :<a href="DepartementbyVIS.php?visCp=75000"> DepartementbyVIS.php?visCp=75000</a></p>
+            <li><h3>Recuperer tous les medicaments si aucun parametre, recupere les infos d'un medicament avec parametre</h3></li>
+            <p>Sans parametre :<a href="MedicamentbyDEPOTLEGAL.php"> MedicamentbyDEPOTLEGAL.php</a></p>
+            <p>Avec parametre :<a href="MedicamentbyDEPOTLEGAL.php?depotLegal=3MYC7"> MedicamentbyDEPOTLEGAL.php?depotLegal=3MYC7</a></p>
+            <li><h3>Recuperer les infos des praticiens si aucun param, avec param, recupere les infos du praticien concerne</h3></li>
+            <p>Sans parametre :<a href="PraticienbyID.php"> PraticienbyID.php</a></p>
+            <p>Avec parametre :<a href="PraticienbyID.php?id=1"> PraticienbyID.php?id=1</a></p>
+            <li><h3>Cree une fiche en base de donnees avec les informations renseigner</h3></li>
+            <p>Avec parametre :<a href="createRapport.php?visMat=a17&praNum=4&date=2021-03-20&bilan=RAS&motif=Rapport Annuel">
+                createRapport.php?visMat=a17&praNum=4&date=2021-03-20&bilan=RAS&motif=Rapport Annuel</a>
+            </p>
+        </ul>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-4"></div>
+</div>
+</body>
+</html>
