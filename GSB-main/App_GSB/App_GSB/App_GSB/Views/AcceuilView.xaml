@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_GSB.Views.AcceuilView"
+             Title="Acceuil"
+             BackgroundImageSource="https://cdn.wallpapersafari.com/8/81/whIEPx.jpg">
+
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+        <StackLayout BackgroundColor="White" Padding="20" >
+            <Label Text="{Binding Login, StringFormat='Bonjour Mr. {0:c}'}" TextColor="Black"/>
+
+            <Image Source="https://lauretyann.files.wordpress.com/2014/03/logo1.png?w=700" />
+            
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Label TextColor="Black"  Text="Menu:" FontAttributes="Bold" TextDecorations="Underline"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" >
+                <Button Text="Comptes rendus" TextColor="Black" Command="{Binding CompteRendue}"/>
+                <Button Text="Visiteurs" TextColor="Black" Command="{Binding Visiteur}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Praticiens" TextColor="Black" Command="{Binding Praticien}"/>
+                <Button Text="Médicaments" TextColor="Black" Command="{Binding Medicaments}"/>
+            </StackLayout>
+            
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

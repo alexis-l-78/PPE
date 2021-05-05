@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_GSB.Views.ConnexionPage"
+             Title="Connexion"
+             BackgroundImageSource="https://cdn.wallpapersafari.com/8/81/whIEPx.jpg">
+
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+        <StackLayout>
+            <StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+
+        <StackLayout BackgroundColor="White" Padding="20" >
+            <Label TextColor="Black"  Text="Laboratoire Galaxy Swiss Bourdin"/>
+            <Image Source="https://lauretyann.files.wordpress.com/2014/03/logo1.png?w=700" />
+            <StackLayout>
+                <Label Text="Il doit y avoir une erreur dans l'identifiant."
+                       TextColor="Red"
+                       IsVisible="{Binding Erreur}"/>
+                <Label Text="Identifiant : "/>
+                <Entry Text="{Binding Login}"/>
+                <Label Text="Mot de passe : " />
+                <Entry Text="{Binding MotDePasse}" IsPassword="True"/>
+                <Button Text="Se connecter"
+                        Command="{Binding ConnexionCommand}"/>
+            </StackLayout>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

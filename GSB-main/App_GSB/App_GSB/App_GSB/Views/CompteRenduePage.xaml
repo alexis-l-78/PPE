@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_GSB.Views.CompteRenduePage"
+             Title="{Binding Title}"
+             BackgroundImageSource="https://cdn.wallpapersafari.com/8/81/whIEPx.jpg">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+        <StackLayout BackgroundColor="White" Padding="20" >
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Matricule du visiteur:"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding Matricule, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Numéro du rapport :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding RapNum, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Numéro du praticien :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding PraNum, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Date du Rapport :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding RapDate, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Bilan :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding RapBilan, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Motif :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding RapMotif, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Command="{Binding Moins}" Text="Precedent"/>
+                <Button Command="{Binding AddCompteRendu}" Text="+" FontSize="30"/>
+                <Button Command="{Binding PLus}" Text="Suivant"/>
+            </StackLayout>
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

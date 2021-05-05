@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_GSB.Views.MedicamentPage"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <StackLayout BackgroundColor="White" Padding="20" >
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Dépot légal médicament :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding MED_DEPOTLEGAL, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Nom commercial :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding MED_NOMCOMMERCIAL, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Famille de médicaments :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding FAM_CODE, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Composition :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding MED_COMPOSITION, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Effets :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding MED_EFFETS, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Contre indications :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding MED_CONTREINDIC, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Command="{Binding Moins}" Text="Precedent"/>
+                <Button Command="{Binding PLus}" Text="Suivant"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

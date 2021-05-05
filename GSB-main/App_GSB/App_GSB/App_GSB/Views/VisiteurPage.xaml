@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_GSB.Views.VisiteurPage"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <StackLayout BackgroundColor="White" Padding="20" >
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Nom du praticien:"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding PRA_NOM, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Prénom du praticien :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding PRA_PRENOM, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Numéro du praticien :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding PraNum, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Adrresse :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding PRA_ADRESSE, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Code postal :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding PRA_CP, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Ville :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding PRA_VILLE, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Laboratoire :"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding PRA_COEFNOTORIETE, StringFormat='{0:c}'}" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Command="{Binding Moins}" Text="Precedent"/>
+                <Button Command="{Binding PLus}" Text="Suivant"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
